@@ -6,7 +6,7 @@
 
 ## <p align="center"> <b>Preview</b> </p>
 
-![screenshot](https://github.com/osvajac0/Dots/blob/main/screenshots/preview.png)
+![screenshot](https://github.com/osvajac0/dotfiles/blob/main/screenshots/preview.png)
 
 ---
 
@@ -34,11 +34,11 @@ static const char *group = "wheel"; // put your group here
 
 ## <p align="center">Browser</p>
 
-![image](https://github.com/osvajac0/Dots/blob/main/screenshots/browser.png)
+![image](https://github.com/osvajac0/dotfiles/blob/main/screenshots/browser.png)
 
 <br>
 <p align="center"> <a href="https://github.com/yiiyahui/Neptune-Firefox/">
-  <img src="https://github.com/osvajac0/Dots/blob/main/items/open.svg"/>
+  <img src="https://github.com/osvajac0/dotfiles/blob/main/items/open.svg"/>
 </a> </p>
 <br>
 
@@ -48,7 +48,7 @@ static const char *group = "wheel"; // put your group here
 
 <br>
 <p align="center"> <a href="https://www.nerdfonts.com/font-downloads">
-  <img src="https://github.com/osvajac0/Dots/blob/main/items/open.svg"/>
+  <img src="https://github.com/osvajac0/dotfiles/blob/main/items/open.svg"/>
 </a> </p>
 <br>
 
@@ -58,6 +58,6 @@ static const char *group = "wheel"; // put your group here
 
 <br>
 <p align="center"> <a href="https://www.onlinewebfonts.com/download/2fbb6b12a1a12289408fbd5ce7e7e872">
-  <img src="https://github.com/osvajac0/Dots/blob/main/items/open.svg"/>
+  <img src="https://github.com/osvajac0/dotfiles/blob/main/items/open.svg"/>
 </a> </p>
 <br>
