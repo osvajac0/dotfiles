@@ -1,0 +1,29 @@
+# MPD connection
+mpd_host = "127.0.0.1"
+mpd_port = "6600"
+
+# UI
+user_interface = "classic"
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "yes"
+
+# Colors
+colors_enabled = "yes"
+main_window_color = "white"
+state_line_color = "green"
+statusbar_color = "white"
+volume_color = "yellow"
+
+# Behavior
+autocenter_mode = "yes"
+centered_cursor = "yes"
+progressbar_look = "━━━"
+progressbar_color = "cyan"
+song_list_format = "{{%a - }{%t}|{%f}}"
+
+# External visualizer support (optional)
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "Visualizer"
+visualizer_type = "ellipse"
+

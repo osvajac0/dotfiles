@@ -1,0 +1,13 @@
+#!/bin/sh
+
+feh_option=$(echo -e "fill\nscale\ncenter\ntile\nstretch\nmax" | dmenu -i -p "Choose an option -")
+
+[ -z "$feh_option" ] && exit 1
+
+wallpaper=$(ls ~/Pictures/backgrounds | dmenu -i -l 23 -p "Choose a wallpaper -")
+
+[ -z "$wallpaper" ] && exit 1
+
+feh --bg-$feh_option ~/Pictures/backgrounds/$wallpaper
+
+wal -i ~/Pictures/backgrounds/$wallpaper -n --backend imagemagick && xrdb -merge ~/.cache/wal/colors-dwm.Xresources

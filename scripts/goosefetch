@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Goose Fetch - A system info script with a goose!
+
+# Get system info
+USER=$(whoami)
+HOSTNAME=$(cat /etc/hostname 2>/dev/null || hostname 2>/dev/null || echo "unknown")
+OS=$(uname -s)
+KERNEL=$(uname -r)
+UPTIME=$(uptime -p 2>/dev/null || uptime | awk '{print $3 " " $4}')
+SHELL_NAME=$(basename "$SHELL")
+CPU=$(uname -m)
+MEMORY=$(free -h 2>/dev/null | awk '/^Mem:/ {print $3 "/" $2}' || echo "N/A")
+
+# Get package count
+if command -v dpkg &> /dev/null; then
+    PACKAGES=$(dpkg -l | grep -c '^ii')
+elif command -v rpm &> /dev/null; then
+    PACKAGES=$(rpm -qa | wc -l)
+elif command -v pacman &> /dev/null; then
+    PACKAGES=$(pacman -Q | wc -l)
+else
+    PACKAGES="N/A"
+fi
+
+# Print with printf to properly handle escape codes
+printf "\n"
+printf "                        _,┌g%%o       \e[1;36m%s\e[0m@\e[1;36m%s\e[0m\n" "$USER" "$HOSTNAME"
+printf "                 _.,,┌g\`\$\$?' ,       \e[1;35m─────────────────────────\e[0m\n"
+printf "         ,d\$\$SSk, \`?\$\$\$\$\$i','        \e[1;32mOS:\e[0m %s\n" "$OS"
+printf "       ,d\$\$\$S\$\$\$Sk, \`?\$7','          \e[1;32mKernel:\e[0m %s\n" "$KERNEL"
+printf "      j\$\$\$º'º\$\$S\$\$\$k,  ,'            \e[1;32mUptime:\e[0m %s\n" "$UPTIME"
+printf "     j\$\$\$L º¸J\$\$\$\$\$\$S:               \e[1;32mShell:\e[0m %s\n" "$SHELL_NAME"
+printf "    .S\$\$\$\$\$\$\$\$\$\$\$\$\$\$?                \e[1;32mCPU:\e[0m %s\n" "$CPU"
+printf "    iS\$\$\$\$\$\$\$\$\$\$\$\$\$7                 \e[1;32mMemory:\e[0m %s\n" "$MEMORY"
+printf "    IS\$\$\$\$\$\$\$\$\$\$\$I7                  \e[1;32mPackages:\e[0m %s\n" "$PACKAGES"
+printf "    iS\$\$\$\$\$\$\$\$\$\$I?'\n"
+printf "    :iS\$\$\$\$\$\$\$\$\$I                    Hello!\n"
+printf "     ?IS\$\$\$\$\$\$\$I:\n"
+printf "      ?IS\$\$\$\$\$Ii.\n"
+printf "       ?iS\$\$\$\$IIi.\n"
+printf "        :IS\$\$\$\$\$\$Ii.\n"
+printf "         :IS\$\$\$SSII:\n"
+printf "          :IS\$\$\$\$SSII:\n"
+printf "          .IS\$\$\$\$\$SIIi.\n"
+printf "           IS\$\$\$\$\$\$SII:\n"
+printf "          :IS\$\$\$\$\$\$\$Ii:\n"
+printf "\n"

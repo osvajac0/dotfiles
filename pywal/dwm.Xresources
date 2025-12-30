@@ -1,0 +1,62 @@
+! dwm-minimal.Xresources - Minimal pywal template focusing on core colors
+! This template uses fewer colors for a cleaner, more cohesive look
+
+! Basic window colors - inactive windows
+dwm.normfgcolor:        {color4}
+dwm.normbgcolor:        {background}
+dwm.normbordercolor:    {color4}
+dwm.normfloatcolor:     {color4}
+
+! Selected/focused window colors
+dwm.selfgcolor:         {color4}
+dwm.selbgcolor:         {background}
+dwm.selbordercolor:     {color4}
+dwm.selfloatcolor:      {color4}
+
+! Title bar colors
+dwm.titlenormfgcolor:   {color13}
+dwm.titlenormbgcolor:   {background}
+dwm.titlenormbordercolor: {color4}
+dwm.titlenormfloatcolor: {color4}
+
+dwm.titleselfgcolor:    {color13}
+dwm.titleselbgcolor:    {background}
+dwm.titleselbordercolor: {color4}
+dwm.titleselfloatcolor: {color4}
+
+! Tag colors
+dwm.tagsnormfgcolor:    {color9}
+dwm.tagsnormbgcolor:    {background}
+dwm.tagsnormbordercolor: {color0}
+dwm.tagsnormfloatcolor: {color4}
+
+dwm.tagsselfgcolor:     {background}
+dwm.tagsselbgcolor:     {color9}
+dwm.tagsselbordercolor: {color2}
+dwm.tagsselfloatcolor:  {color2}
+
+! Hidden windows
+dwm.hidnormfgcolor:     {color8}
+dwm.hidnormbgcolor:     {background}
+dwm.hidselfgcolor:      {color8}
+dwm.hidselbgcolor:      {color1}
+
+! Urgent windows
+dwm.urgfgcolor:         {background}
+dwm.urgbgcolor:         {color3}
+dwm.urgbordercolor:     {color3}
+dwm.urgfloatcolor:      {color3}
+
+! Layout symbol (if patch enabled)
+dwm.ltsymbolfgcolor:    {background}
+dwm.ltsymbolbgcolor:    {color4}
+
+! Scratchpads (if patch enabled) - using accent color
+dwm.scratchselfgcolor:  {background}
+dwm.scratchselbgcolor:  {color5}
+dwm.scratchselbordercolor: {color5}
+dwm.scratchselfloatcolor: {color5}
+dwm.scratchnormfgcolor: {color13}
+dwm.scratchnormbgcolor: {background}
+dwm.scratchnormbordercolor: {color8}
+dwm.scratchnormfloatcolor: {color13}

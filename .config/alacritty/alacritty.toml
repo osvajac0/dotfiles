@@ -1,0 +1,75 @@
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#b5b5b5"
+
+[colors.normal]
+black = "#000000"
+red = "#896d6d"
+green = "#4a5353"
+yellow = "#4a5353"
+blue = "#89a3a3"
+magenta = "#6d8989"
+cyan = "#6d896d"
+white = "#cfd3d2"
+
+[colors.bright]
+black = "#202020"
+red = "#896d89"
+green = "#6d896d"
+yellow = "#896d6d"
+blue = "#89a3a3"
+magenta = "#6d8989"
+cyan = "#4a5353"
+white = "#eeeeee"
+
+[colors.dim]
+black = "#000000"
+red = "#896d6d"
+green = "#4a5353"
+yellow = "#4a5353"
+blue = "#89a3a3"
+magenta = "#6d8989"
+cyan = "#6d896d"
+white = "#cfd3d2"
+
+[cursor]
+style = "block"
+#thickness = 0.2
+unfocused_hollow = false
+
+[font]
+size = 8
+
+[font.bold]
+family = "IBM DOS VGA 9x16"
+style = "Bold"
+
+[font.bold_italic]
+family = "IBM DOS VGA 9x16"
+style = "Bold Italic"
+
+[font.italic]
+family = "IBM DOS VGA 9x16"
+style = "Bold Italic"
+
+[font.normal]
+family = "IBM DOS VGA 9x16"
+style = "Bold"
+
+[terminal.shell]
+program = "/bin/bash"
+
+[window.padding]
+x = 40
+y = 40
+
+
+[window]
+opacity = 0.9
+
+[terminal]

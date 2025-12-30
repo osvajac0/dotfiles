@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+FOLDER=$HOME/Downloads/anashid
+
+openvid () { \
+  NAME="$(echo "$(command ls $FOLDER)" | dmenu -i -l 30)" || exit 0
+  mpv "$FOLDER$NAME" >/dev/null 2>&1
+}
+
+openvid

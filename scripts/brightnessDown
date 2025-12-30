@@ -1,0 +1,55 @@
+#!/bin/bash
+# brightness_up.sh
+
+# Increase brightness
+brightnessctl set +10%
+
+# Get current brightness percentage
+current=$(brightnessctl get)
+max=$(brightnessctl max)
+percent=$((current * 100 / max))
+
+# Determine icon based on brightness level
+if [ $percent -ge 80 ]; then
+    icon="☀️"
+elif [ $percent -ge 60 ]; then
+    icon="🔆"
+elif [ $percent -ge 40 ]; then
+    icon="🔅"
+elif [ $percent -ge 20 ]; then
+    icon="🌤️"
+else
+    icon="🌙"
+fi
+
+# Send notification with unique ID to prevent stacking
+notify-send -u low -t 2000 -r 1001 "Brightness" "$icon ${percent}%"
+
+---
+
+#!/bin/bash
+# brightness_down.sh
+
+# Decrease brightness
+brightnessctl set 10%-
+
+# Get current brightness percentage
+current=$(brightnessctl get)
+max=$(brightnessctl max)
+percent=$((current * 100 / max))
+
+# Determine icon based on brightness level
+if [ $percent -ge 80 ]; then
+    icon="☀️"
+elif [ $percent -ge 60 ]; then
+    icon="🔆"
+elif [ $percent -ge 40 ]; then
+    icon="🔅"
+elif [ $percent -ge 20 ]; then
+    icon="🌤️"
+else
+    icon="🌙"
+fi
+
+# Send notification with unique ID to prevent stacking
+notify-send -u low -t 2000 -r 1001 "Brightness" "$icon ${percent}%"
