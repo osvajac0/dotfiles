@@ -1,4 +1,8 @@
-![banner](https://github.com/osvajac0/dotfiles/blob/main/items/ascii.png)
+<br>
+<p align="center">
+	<img src="https://github.com/osvajac0/dotfiles/blob/main/items/ascii.png"/>
+</p>
+<br>
 
 <p align="center">A configured dwm-flexipatch config.</p>
 
